@@ -5,6 +5,7 @@ node_modules
 jspm_packages
 bower_components
 
+.idea
 .vs
 **/*.sou
 **/*.user
