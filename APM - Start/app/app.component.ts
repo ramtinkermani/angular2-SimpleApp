@@ -4,6 +4,7 @@
 import { Component } from "angular2/core";
 import { ProductListComponent } from "./products/product-list.component";
 import { OnInit } from "angular2/src/core/linker/interfaces";
+import { ProductService } from "./products/product.service";
 
 @Component({
     selector: "pm-app",
@@ -17,7 +18,8 @@ import { OnInit } from "angular2/src/core/linker/interfaces";
         </div>   
         `
     ,
-    directives: [ProductListComponent]
+    directives: [ProductListComponent],
+    providers: [ProductService]
 })
 export class AppComponent implements OnInit{
     pageTitle: string = "Title: My first Angular2 Component"
